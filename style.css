@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;&display=swap');
+
+* {
+    box-sizing :border-box;
+    margin: 0;
+}
+
+body{
+    margin:0;
+    font-family: Roboto, sans-serif;
+    color: lightgrey;
+}
+
+/*Header*/
+
+header{
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    height: 50px;
+}
+
+/*Main section*/
+
+main {
+    background-color:black;
+    background-image: url("img/chess-knights-background.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 75vh;
+    padding:10px;   
+}
+
+h1{
+    font-size: 15px;
+}
+
+#infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+}
+
+#infos li{
+    list-style: none;
+}
+
+/*Footer*/
+
+footer {
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 12px;
+    font-size: 12px;
+}
+
+footer img{
+    height: 20px;
+}
+
+/*Buttons*/
+
+.btn{
+    padding: 10px;
+    width: 130px;
+    border: solid 1px lightgrey;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.btn1{
+    background-color: black;
+    color: lightgrey;
+}
+
+.btn2{
+    background-color: lightgrey;
+    color: black;  
+}
+
+.btn1:hover{
+    background-color: lightgrey;
+    color: black;
+}
