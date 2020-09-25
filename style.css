@@ -19,7 +19,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50px;
 }
 
 #logo{
@@ -46,16 +45,61 @@ main {
     height: 30vh;
 }
 
-/*Timer step*/
+/*Instructions step*/
 
-#timer-step img{
-    height: 30px;
-    margin-left: 10px;
+#instructions{
+    display: flex;   
+    flex-direction: column;
+    justify-content: flex-start; 
 }
+
+@media screen and (max-height: 400px) {
+    #instructions {
+    flex-direction: row;   
+    }
+
+    .instruction {
+       font-size: 12px;
+    }
+
+    #instructions h2{
+        font-size: 14px; 
+     }
+    
+    #instructions button{
+        margin-left: 20px;
+    }
+}
+
+.instruction {
+    list-style: none;
+    display:flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4); 
+    border-radius: 30px;
+}
+
+.instruction img{
+   width: 40px;
+   margin: 10px;
+}
+
+#instructions button{
+    margin-top: 20px;
+}
+
+
+/*Timer step*/
 
 #timer-step{
     justify-content: space-between;
 }
+
+#clock-timer{
+    height: 30px;
+    margin-left: 10px;
+}
+
 
 
 /*Footer*/
@@ -63,7 +107,6 @@ main {
 footer {
     background-color: black;
     height: 10vh;
-    min-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +168,11 @@ footer img{
     transform: translate(-50%, -50%);
     opacity: 1;
     width: 80vw;
-    height: 60vh;
+    height: 60vh;  
+}
+
+.step h2{
+    text-align: center;
 }
 
 .hide{    

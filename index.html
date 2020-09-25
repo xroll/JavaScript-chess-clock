@@ -24,12 +24,27 @@
                 </button>
             </div>
 
-            <div id="instructions" class="step hide">                
+            <div id="instructions" class="step hide">    
+                <h2>Instructions</h2>            
+                <ul>                    
+                    <li class="instruction">
+                        <img src="img/clock.png" alt="clock">
+                        <p>Set the timer</p>
+                    </li>
+                    <li class="instruction">
+                        <img src="img/knight.png" alt="chess knight">
+                        <p>Start the clock, the time start for white player</p>
+                    </li>
+                    <li class="instruction">
+                        <img src="img/click.png" alt="click">
+                        <p>Each player can toggle the clock by clicking on the time or by pressing the spacebar on desktop version</p>
+                    </li>
+                </ul>                
                 <button onclick="back()" class="btn btn1">Back</button>
             </div>
             
             <div id="timer-step" class="step hide">
-                <img src="img/clock.png" alt="clock">
+                <img src="img/clock.png" alt="clock" id="clock-timer">
                 <h2>Set the timer</h2>
                 <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">5 minutes</button>
                 <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">10 minutes</button>
