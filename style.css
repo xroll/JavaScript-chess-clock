@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     box-sizing :border-box;
@@ -19,6 +19,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 50px;
 }
 
 #logo{
@@ -34,30 +35,35 @@ main {
     background-position: bottom;
     background-repeat: no-repeat;
     height: 75vh;
-    padding:10px;   
+    padding:10px;
+    width: 100vw;  
 }
 
-h1{
-    font-size: 15px;
-}
+/*Info step*/
 
 #infos{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    height: 40vh;
+    height: 30vh;
 }
 
-#infos li{
-    list-style: none;
+/*Timer step*/
+
+#timer-step img{
+    height: 30px;
+    margin-left: 10px;
 }
+
+#timer-step{
+    justify-content: space-between;
+}
+
 
 /*Footer*/
 
 footer {
     background-color: black;
     height: 10vh;
+    min-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,3 +103,40 @@ footer img{
     background-color: lightgrey;
     color: black;
 }
+
+.circle-btn{
+    height: 40px;
+    width: 40px;
+    border: solid 1px lightgrey;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: 15px;
+}
+
+/*Display classes and step transitions*/
+
+.step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 80vw;
+    height: 60vh;
+}
+
+.hide{    
+    left: -1000vw;
+    opacity: 0;
+    transition: left 2.5s ease-in-out, opacity ease-in 1s;
+}
+
+.show{
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out 0.5s;
+}
+
+
