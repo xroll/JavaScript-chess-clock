@@ -47,13 +47,13 @@
                 <img src="img/clock.png" alt="clock" id="clock-timer">
                 <h2>Set the timer</h2>
                 <div class="timer-buttons">
-                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">5 minutes</button>
-                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">10 minutes</button>
-                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">20 minutes</button>
+                    <button onclick="setTimer(this.value)" class="btn btn1" value="5">5 minutes</button>
+                    <button onclick="setTimer(this.value)" class="btn btn1" value="10">10 minutes</button>
+                    <button onclick="setTimer(this.value)" class="btn btn1" value="20">20 minutes</button>
                 </div>
                 <div class="timer-buttons">
-                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">30 minutes</button>
-                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">1 hour</button>
+                    <button onclick="setTimer(this.value)" class="btn btn1" value="30" id="btn10">30 minutes</button>
+                    <button onclick="setTimer(this.value)" class="btn btn1" value="60" id="btn10">1 hour</button>
                     <button onclick="showCustomInput()" class="btn btn1" value="10" id="btn10">Custom</button>
                 </div>
                 
@@ -62,7 +62,21 @@
             </div>               
 
             <div id="chess-clock" class="step hide">
-
+                <div id="time-display">
+                    <button  onclick="whiteToggle()" id="white-timer" class="player-timer">
+                        <p id="whiteHours"></p>
+                        <p id="whiteMinutes"></p>
+                        <p id="whiteSeconds"></p>                               
+                    </button>                                     
+                    <button onclick="blackToggle()" id="black-timer" class="player-timer">
+                        <p id="blackHours"></p>
+                        <p id="blackMinutes"></p>
+                        <p id="blackSeconds"></p>                 
+                    </button>   
+                </div>                
+                <button onclick="startClock()" class="btn btn1">Start clock</button>     
+                
+                <button onclick="timerSelect()" class="btn btn1">timer select</button>
             </div>
         </main>
 
