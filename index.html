@@ -46,12 +46,18 @@
             <div id="timer-step" class="step hide">
                 <img src="img/clock.png" alt="clock" id="clock-timer">
                 <h2>Set the timer</h2>
-                <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">5 minutes</button>
-                <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">10 minutes</button>
-                <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">20 minutes</button>
-                <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">30 minutes</button>
-                <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">1 hour</button>
-                <button onclick="showCustomInput()" class="btn btn1" value="10" id="btn10">Custom</button>
+                <div class="timer-buttons">
+                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">5 minutes</button>
+                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">10 minutes</button>
+                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">20 minutes</button>
+                </div>
+                <div class="timer-buttons">
+                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">30 minutes</button>
+                    <button onclick="setTimer()" class="btn btn1" value="10" id="btn10">1 hour</button>
+                    <button onclick="showCustomInput()" class="btn btn1" value="10" id="btn10">Custom</button>
+                </div>
+                
+                
                 <button onclick="showFirstStep()" class="btn btn1">Back</button> 
             </div>               
 
