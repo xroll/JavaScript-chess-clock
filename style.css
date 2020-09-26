@@ -116,6 +116,21 @@ main {
 
 /*Clock Step*/
 
+/*time display*/
+
+.player-timer {
+    display: flex;
+}
+
+#white-timer{
+    background-color: lightgrey;
+    color: black;       
+}
+#black-timer{
+    background-color: black;
+    color: lightgrey;
+    border: 1px solid lightgrey;
+}
 
 
 
