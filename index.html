@@ -63,18 +63,18 @@
 
             <div id="chess-clock" class="step hide">
                 <div id="time-display">
-                    <div id="white-timer" class="player-timer">
+                    <button  onclick="whiteToggle()" id="white-timer" class="player-timer">
                         <p id="whiteHours"></p>
                         <p id="whiteMinutes"></p>
                         <p id="whiteSeconds"></p>                               
-                    </div>                                     
-                    <div id="black-timer" class="player-timer">
+                    </button>                                     
+                    <button onclick="blackToggle()" id="black-timer" class="player-timer">
                         <p id="blackHours"></p>
                         <p id="blackMinutes"></p>
                         <p id="blackSeconds"></p>                 
-                    </div>   
+                    </button>   
                 </div>                
-                              
+                <button onclick="startClock()" class="btn btn1">Start clock</button>     
                 
                 <button onclick="timerSelect()" class="btn btn1">timer select</button>
             </div>
